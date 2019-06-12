@@ -4,5 +4,5 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-FROM payara/micro
-COPY /tmp/target/HelloWAR.war $DEPLOY_DIR
+# FROM payara/micro
+# COPY /tmp/target/HelloWAR.war $DEPLOY_DIR
