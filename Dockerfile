@@ -5,4 +5,4 @@ WORKDIR /tmp/
 RUN mvn compile war:war
 
 FROM payara/micro
-COPY /tmp/target/HelloWAR.war $DEPLOY_DIR
+COPY /tmp/target/HelloWar.war $DEPLOY_DIR
