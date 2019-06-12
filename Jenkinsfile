@@ -1,13 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3-alpine'
-            args '--entrypoint=\'\''
-        }
-    }
+    agent { dockerfile true }
     stages {
         stage('Build') {
             steps {
+                echo 'building'
                 sh 'mvn clean install'
             }
         }
