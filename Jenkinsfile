@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'building'
-                mvn compile war:war
+                mvn install
             }
         }
         stage('Deploy') {
