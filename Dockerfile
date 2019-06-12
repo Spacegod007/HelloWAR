@@ -2,7 +2,7 @@ FROM maven:3.5.2-jdk-8-alpine AS MAVEN_TOOL_CHAIN
 COPY pom.xml /tmp/
 COPY src /tmp/src/
 WORKDIR /tmp/
-RUN mvn compile war:war
+#RUN mvn compile war:war
 
-FROM payara/micro
-COPY /target/HelloWAR*.war $DEPLOY_DIR
+#FROM payara/micro
+#COPY /target/HelloWAR*.war $DEPLOY_DIR
