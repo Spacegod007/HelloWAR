@@ -4,5 +4,5 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-FROM payara/micro
-COPY --from=MAVEN_TOOL_CHAIN /tmp/target/HelloWAR*.war $DEPLOY_DIR
+# FROM payara/micro
+# COPY --from=MAVEN_TOOL_CHAIN /tmp/target/HelloWAR*.war $DEPLOY_DIR
